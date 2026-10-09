@@ -1,0 +1,12 @@
+# Auto-detect text files and normalise line endings
+* text=auto
+
+# Binary data files
+*.bin binary
+*.wav binary
+*.png binary
+*.raw binary
+*.out binary
+*.obj binary
+*.o binary
+

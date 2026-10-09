@@ -1,0 +1,54 @@
+# Build outputs
+Debug/
+Release/
+*.out
+*.obj
+*.o
+*.d
+*.map
+*.elf
+*.lst
+
+# CCS settings (user-specific)
+.settings/
+.launches/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Data files (large)
+data/*.wav
+data/*.png
+data/*.raw
+!data/README.md
+
+# Generated test vectors
+data/vectors/
+
+# Generated results
+docs/results/*.png
+docs/results/*.csv
+docs/results/*.txt
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Host test binaries
+target/test_runner
+target/stego_host
+target/tests/test_*
+!target/tests/test_*.c
+

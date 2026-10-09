@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  C6748_XDS100v3.ccxml.template
+  Target Configuration Template for Texas Instruments TMS320C6748 via XDS100v3 USB Debug Probe.
+
+  NOTE:
+  This file serves as a structured template. On your host system, open CCS,
+  create a new Target Configuration File named 'C6748_XDS100v3.ccxml',
+  select 'Texas Instruments XDS100v3 USB Debug Probe' and device 'TMS320C6748',
+  and assign your board's initialization GEL file to the C674X_0 core.
+-->
+<configurations XML_version="1.2" id="configurations_0">
+    <configuration XML_version="1.2" id="Texas Instruments XDS100v3 USB Debug Probe_0">
+        <instance XML_version="1.2" href="connections/TIXDS100v3_Dot7_Connection.xml" id="Texas Instruments XDS100v3 USB Debug Probe_0" xml="TIXDS100v3_Dot7_Connection.xml" xmlpath="connections"/>
+        <connection XML_version="1.2" id="Texas Instruments XDS100v3 USB Debug Probe_0">
+            <instance XML_version="1.2" href="drivers/tixds100v2c674x.xml" id="drivers" xml="tixds100v2c674x.xml" xmlpath="drivers"/>
+            <platform XML_version="1.2" id="platform_0">
+                <instance XML_version="1.2" href="devices/TMS320C6748.xml" id="TMS320C6748_0" xml="TMS320C6748.xml" xmlpath="devices"/>
+                <device HW_revision="1" XML_version="1.2" description="TMS320C6748 Floating-Point DSP" id="TMS320C6748_0" partnum="TMS320C6748">
+                    <cpu HW_revision="1.0" XML_version="1.2" description="C674x Floating point CPU" id="C674X_0" isa="TMS320C674X">
+                        <property Type="string" Value="${PROJECT_ROOT}/../scripts/C6748_LCDK.gel" id="GEL File"/>
+                    </cpu>
+                </device>
+            </platform>
+        </connection>
+    </configuration>
+</configurations>
